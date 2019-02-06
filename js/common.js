@@ -1,0 +1,117 @@
+// $(function() {
+
+//  $('body').fadeOut(1500);
+
+// });
+$(document).ready(function() {
+
+
+	// masked input
+	$(function () {
+	  $.mask.definitions['~'] = "[+-]";
+	  $(".masked-input").mask("8(999)-999-99-99", {
+	      placeholder: " "
+	  });
+	});
+
+
+	// form switcher
+	$('button[data-src="#form-callback"]').on('click', function() {
+	  var metrika = $(this).data('fmetrika');
+	  var header = $(this).data('fhead');
+	  var description = $(this).data('fdescript');
+	  var info = $(this).data('finfo');
+	  $('.js-form-button').attr('onsubmit', metrika);
+	  $('.js-form-heading').text(header);
+	  $('.js-form-description').text(description);
+	  $('.js-form [name=form_subject]').val(info);
+	});
+
+	$('a[data-src="#form-callback"]').on('click', function() {
+	  var metrika = $(this).data('fmetrika');
+	  var header = $(this).data('fhead');
+	  var info = $(this).data('finfo');
+	  $('.popup-callback').attr('onsubmit', metrika);
+	  $('.js-form-heading').text(header);
+	  $('.popup-callback [name=form_subject]').val(info);
+	});
+
+// form thanks
+
+	//E-mail Ajax Send
+		$("form").submit(function() { //Change
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "js/mail.php", //Change
+				data: th.serialize()
+			}).done(function() {
+				$('.wide-form__description--policy').addClass('hidden');
+				$('.wide-form__success').removeClass('hidden');
+				$('.modal-form__thanks').addClass('active');
+				setTimeout(function() {
+					// Done Functions
+					th.trigger("reset");
+					$.fancybox.close();
+					$('.wide-form__description--policy').removeClass('hidden');
+					$('.wide-form__success').addClass('hidden');
+					$('.modal-form__thanks').removeClass('active');
+				}, 5000);
+			});
+			return false;
+		});
+
+
+	$("a.js-slideDown").click(function() {
+		$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "px"
+		}, {
+			duration: 500,
+			easing: "swing"
+		});
+		return false;
+	});
+
+	$("#up").click(function() {
+		$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "px"
+		}, {
+			duration: 500,
+			easing: "swing"
+		});
+		return false;
+	});
+
+
+
+
+
+
+
+		var headertext = [],
+		headers = document.querySelectorAll(".feature th"),
+		tablerows = document.querySelectorAll(".feature th"),
+		tablebody = document.querySelector(".feature tbody");
+
+		for(var i = 0; i < headers.length; i++) {
+			var current = headers[i];
+			headertext.push(current.textContent.replace(/\r?\n|\r/,""));
+		}
+		for (var i = 0, row; row = tablebody.rows[i]; i++) {
+			for (var j = 0, col; col = row.cells[j]; j++) {
+				col.setAttribute("data-th", headertext[j]);
+			}
+		};
+
+
+
+
+
+
+
+
+
+
+
+
+});
