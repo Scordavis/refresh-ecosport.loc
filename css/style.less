@@ -25,9 +25,10 @@ body {
 	}
 }
 
-@main: rgb(7,23,53);
+@accent: rgb(6, 47, 137);
+@main: rgb(40, 121, 255);
 @text: rgba(0,68,125,1);
-@maintr: rgba(7,23,53,0.7);
+@maintr: rgba(40, 121, 255, 0.7);
 @yellow: rgba(252,197,29,1);
 @graf: rgba(41,41,41,1);
 @white: rgba(255,255,255,1.0);
@@ -509,7 +510,6 @@ body {
 		height: auto;
 		min-height: 100vh;
 		position: relative;
-		background-image: url(../img/bg-first-min.jpg);
 		background-position: 100% 0%;
 		/*-------------------relative contacts-----------------------*/
 		.relative-logo-block {
@@ -556,19 +556,19 @@ body {
 				p:first-child {
 					.flih;
 					font-size: 100%;
-					color: @white;
+					color: @accent;
 				}
 				p:nth-child(2) {
 					.flih;
 					font-size: 160%;
 					text-transform: uppercase;
-					color: @yellow;
+					color: @accent;
 					font-weight: 700;
 					text-align: center;
 					span{
 						display: block;
 						font-size: 75%;
-						color: @white;
+						color: @accent;
 						font-weight: 400;
 					}
 				}
@@ -576,7 +576,7 @@ body {
 			.tel-number {
 				height: 100%;
 				position: relative;
-				color: @white;
+				color: @accent;
 				.flph;
 				.tel {
 					// .flih;
@@ -602,8 +602,8 @@ body {
 				}
 				.btn-recall {
 					display: block;
-					color: @main;
-					background-color: @yellow;
+					color: @white;
+					background-color: @red;
 					width: 80%;
 					text-align: center;
 					padding: 4px 8px;
@@ -611,7 +611,7 @@ body {
 					.trans(all 0.1s);
 					&:hover {
 						color: @white;
-						background-color: @red;
+						background-color: @yellow;
 					}
 				}
 				.work-time {
@@ -636,12 +636,13 @@ body {
 			h1 {
 				display: block;
 				position: relative;
-				text-align: center;
-				color: lighten(@main, 25%);
+				text-align: left;
+				color: @accent;
 				text-shadow: -1px -1px 0px lighten(@main, 90%);
 				background-color: @whitetr;
 				font-weight: 700;
 				padding: 20px;
+				margin-top: 0;
 				margin-bottom: 40px;
 				font-size: 220%;
 			}
@@ -670,8 +671,14 @@ body {
 					bottom: 0px;
 				}
 			}
+			&_row{
+				margin-bottom: 20px;
+			}
+			&_img{
+				max-height: 260px;
+			}
 			p {
-				text-align: right;
+				text-align: left;
 			}
 		}
 		.ico-header-block {
@@ -716,11 +723,11 @@ body {
 					width: 100%;
 					text-transform: uppercase;
 					background-color: @red;
-					color: @yellow;
-					border: 1px solid @graf;
+					color: @white;
+					// border: 1px solid @graf;
 					.trans(all 0.3s);
 					&:hover {
-						color: @graf;
+						color: @white;
 						background-color: @yellow;
 					}
 				}
@@ -743,7 +750,7 @@ body {
 			display: block;
 			max-width: 34px;
 			position: relative;
-			margin: 1vmax auto 0;
+			margin: 40px auto 0;
 			a {
 				width: auto;
 				img {
@@ -770,15 +777,33 @@ body {
 				position: relative;
 				display: block;
 				margin: 0 auto;
-				background-color: @text;
 				padding: 12px;
+				color: @graf;
+				background-color: darken(@white, 10%);
 				&:hover {}
-				p {
-					min-height: 80px;
-					color: @white;
+				h3{
 					font-size: 120%;
+					font-weight: 500;
+					text-align: left;
+				}
+				&__description{
+					color: inherit;
 					font-weight: 300;
-					text-align: center;
+					&--bordered{
+						padding-top: 10px;
+						border-top: 1px solid grey;
+					}
+				}
+				&__link-wrapper{
+					display: block;
+					text-align: left;
+				}
+				&__link-wrapper:nth-child(2){
+					display: block;
+					text-align: right;
+				}
+				&__more{
+					text-align: right;
 				}
 				.img-wrap {
 					img {
