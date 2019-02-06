@@ -134,7 +134,10 @@
 				<p><span>Есть вопросы?</span>Звоните!</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 tel-number">
-				<p class="tel">+7 (981) 989-06-66</p> <p class="tel">8 (812) 000-00-00 </p> <a class="btn-nav btn-recall pointer-over-small" type="button" data-toggle="modal" data-target="#short-form2" data-backdrop="true">заказать звонок</a>
+				<p class="tel">+7 (981) 989-06-66</p> <p class="tel">8 (812) 000-00-00 </p>
+				<a class="btn-nav btn-recall pointer-over-small" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">заказать звонок</a>
+					<!-- <button class="btn btn-primary main-button button-pointer" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">заказать звонок</button> -->
+
 				<!--                <p class="work-time">часы работы с 9 <sup>00</sup> до 20 <sup>00</sup> пн-вс</p>-->
 			</div>
 		</div>
@@ -160,10 +163,10 @@
 					<input type="text" class="form-control" id="name" name="Имя" placeholder="Ваше имя">
 				</div>
 				<div class="form-group col-md-4 col-sm-4">
-					<input type="text" class="form-control" id="phone" name="Телефон" placeholder="Ваш телефон" required>
+					<input type="text" class="form-control masked-input" id="phone" name="Телефон" placeholder="Ваш телефон" required>
 				</div>
 				<div class="form-group col-md-4 col-sm-4">
-					<button type="submit" class="btn btn-form-ecosprot pointer-over">рассчитать стоимость покрытия</button>
+					<button type="submit" class="btn btn-form-ecosprot pointer-over">Оставить заявку</button>
 				</div>
 				<p>С Вами свяжется наш юрист в течение <span id="time-left-callback">15</span> минут</p>
 			</form>
@@ -553,9 +556,36 @@
 	</footer>
 	<!-- end footer -->
 	<p class="year text-center">Информация на сайте не является публичной офертой</p>
-	<!--modals-->
+		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ form modals //////////////////////////////////////  -->
 
-
+	<div class="modal-full-form" id="form-callback" style="display: none;">
+		<div class="modal-form__wrapper">
+			<h3 class="modal-title js-form-heading">Оставьте заявку до конца дня и зафиксируйте цену!</h3>
+			<p class="modal-form__description js-form-description">С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости</p>
+			<form class="modal-form__form js-form">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="ekosportspb@gmail.com">
+				<input type="hidden" name="form_subject" value="Сайт Трава">
+				<!-- END Hidden Required Fields -->
+					<div class="col-lg-12 modal-form__input">
+						<input type="text" class="form-control" name="Name" placeholder="Ваше имя">
+					</div>
+					<div class="col-lg-12 modal-form__input">
+						<input type="text" class="form-control masked-input" name="Phone" placeholder="Ваш номер телефона" required>
+					</div>
+					<div class="col-lg-12 modal-form__input">
+						<button type="submit" class="btn btn-default form-button modal-form__button js-form-button">Отправить</button>
+					</div>
+			</form>
+			<p class="modal-form__description">Нажимая на кнопку, вы <a href="policy.html" target="_blank">даете согласие</a> на обработку своих персональных данных</p>
+		</div>
+		<div class="modal-form__thanks">
+			<p class="modal-form__thanks-heading">Благодарим за заявку!</p>
+			<p class="modal-form__thanks-text">Мы свяжемся с Вами в ближайшее время.</p>
+			<img src="img/logo-vert.jpg" alt="" class="modal-form__thanks-logo">
+		</div>
+	</div>
 
 	<!--modals "our main directions"-->
 	<div class="modal fade" id="playground" tabindex="-1" role="dialog" aria-labelledby="playgroundLabel" data-backdrop="false" aria-hidden="false">
@@ -639,11 +669,7 @@
 			</div>
 		</div>
 	</div>
-
-
 	<!--    modal full form-->
-
-
 
 	<div class="modal fade modal-full-form" id="direction-forms-modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -849,13 +875,15 @@
 			</div>
 		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-		<script src="mail-script.js"></script>
-		<script src="js/lightbox.js"></script>
+		<!-- <script src="mail-script.js"></script> -->
+		<!-- <script src="js/lightbox.js"></script> -->
 		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/jquery.maskedinput.js"></script>
+		<script src="js/common.js"></script>
 		<script>
 			AOS.init();
 		</script>
