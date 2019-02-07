@@ -1986,7 +1986,7 @@ body input:focus {
   #top-panel .container .nav-call p:nth-child(2) span {
     display: block;
     font-size: 75%;
-    color: #062f89;
+    color: #ffffff;
     font-weight: 400;
   }
   #top-panel .container .tel-number {
@@ -2057,8 +2057,6 @@ body input:focus {
   }
   #top-panel .container .tel-number .btn-recall {
     display: block;
-    color: #2879ff;
-    background-color: #fcc51d;
     width: 80%;
     text-align: center;
     padding: 4px 8px;
@@ -2068,10 +2066,6 @@ body input:focus {
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
-  }
-  #top-panel .container .tel-number .btn-recall:hover {
-    color: #ffffff;
-    background-color: #bd2020;
   }
   #top-panel .container .tel-number .work-time {
     margin: 0;
@@ -2299,8 +2293,6 @@ body input:focus {
   }
   .first-screen .relative-logo-block .tel-number .btn-recall {
     display: block;
-    color: #2879ff;
-    background-color: #fcc51d;
     width: 80%;
     text-align: center;
     padding: 4px 8px;
@@ -2309,10 +2301,6 @@ body input:focus {
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
-  }
-  .first-screen .relative-logo-block .tel-number .btn-recall:hover {
-    color: #ffffff;
-    background-color: #bd2020;
   }
   .first-screen .relative-logo-block .tel-number .work-time {
     margin: 0;
@@ -3286,8 +3274,6 @@ body input:focus {
   }
   .first-screen .relative-logo-block .tel-number .btn-recall {
     display: block;
-    color: #2879ff;
-    background-color: #fcc51d;
     width: 80%;
     text-align: center;
     padding: 4px 8px;
@@ -3296,10 +3282,6 @@ body input:focus {
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
-  }
-  .first-screen .relative-logo-block .tel-number .btn-recall:hover {
-    color: #ffffff;
-    background-color: #bd2020;
   }
   .first-screen .relative-logo-block .tel-number .work-time {
     margin: 0;
@@ -4076,7 +4058,7 @@ body input:focus {
   }
   #top-panel .container .logo-block .logo-img img {
     margin-top: 2px;
-    width: 80%;
+    width: 50%;
   }
   #top-panel .container .logo-block .logo-description {
     display: -webkit-box;
@@ -4202,7 +4184,7 @@ body input:focus {
     -ms-grid-row-align: auto;
     align-self: auto;
     margin: 0;
-    font-size: 3vw;
+    font-size: 2.4vw;
     position: relative;
   }
   #top-panel .container .tel-number .tel:first-child:before {
@@ -4216,10 +4198,12 @@ body input:focus {
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
-  }
-  #top-panel .container .tel-number .btn-recall:hover {
     color: #ffffff;
     background-color: #bd2020;
+  }
+  #top-panel .container .tel-number .btn-recall:hover {
+    color: #2879ff;
+    background-color: #fcc51d;
   }
   #top-panel .container .tel-number .work-time {
     margin: 0;
