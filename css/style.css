@@ -958,7 +958,7 @@ body input:focus {
 .first-screen .header_row {
   margin-bottom: 20px;
 }
-.first-screen .header_img {
+.first-screen .header__img {
   max-height: 260px;
 }
 .first-screen .header p {
@@ -3319,9 +3319,16 @@ body input:focus {
     position: relative;
     /*----------------------heading--------------------*/
   }
+  .first-screen .header__img {
+    margin: auto;
+  }
+  .first-screen .header p {
+    text-align: center;
+  }
   .first-screen .header h1 {
     font-size: 3.5vw;
     margin-bottom: 20px;
+    text-align: center;
   }
   .first-screen .header h2 {
     font-size: 2.8vw;
