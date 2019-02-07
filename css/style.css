@@ -1052,6 +1052,9 @@ body input:focus {
   position: relative;
   z-index: 2;
 }
+.second-screen .container .row-card {
+  margin-bottom: 40px;
+}
 .second-screen .container .direction-card {
   position: relative;
   display: block;
