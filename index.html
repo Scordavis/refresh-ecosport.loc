@@ -117,7 +117,7 @@
 				<p><span>Есть вопросы?</span>Звоните!</p>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-6 tel-number">
-				<p class="tel">+7 (981) 989-06-66</p> <p class="tel">8 (812) 000-00-00 </p> <a class="btn-nav btn-recall pointer-over-small" type="button" data-toggle="modal" data-target="#short-form1" data-backdrop="true">Заказать звонок</a>
+				<p class="tel">+7 (981) 989-06-66</p> <p class="tel">8 (812) 000-00-00 </p> <a class="btn-nav btn-recall pointer-over-small" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">заказать звонок</a>
 				<!--                <p class="work-time">часы работы с 9 <sup>00</sup> до 20 <sup>00</sup> пн-вс</p>-->
 			</div>
 		</div>
@@ -136,9 +136,7 @@
 			<div class="col-md-4 col-sm-4 col-xs-6 tel-number">
 				<p class="tel">+7 (981) 989-06-66</p> <p class="tel">8 (812) 000-00-00 </p>
 				<a class="btn-nav btn-recall pointer-over-small" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">заказать звонок</a>
-					<!-- <button class="btn btn-primary main-button button-pointer" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">заказать звонок</button> -->
-
-				<!--                <p class="work-time">часы работы с 9 <sup>00</sup> до 20 <sup>00</sup> пн-вс</p>-->
+				<!-- <p class="work-time">часы работы с 9 <sup>00</sup> до 20 <sup>00</sup> пн-вс</p>-->
 			</div>
 		</div>
 		<div class="container header">
@@ -198,10 +196,10 @@
 							<!-- bottom buttons -->
 							<div class="row">
 								<div class="col-xs-12 col-sm-6 direction-card__link-wrapper">
-									<a class="direction-card__more" type="button" data-toggle="modal" data-target="#playground" data-backdrop="true">Подробнее</a>
+									<a class="direction-card__more" type="button" data-fancybox data-src="#modal-direction-01">Подробнее</a>
 								</div>
 								<div class="col-xs-12 col-sm-6 direction-card__link-wrapper">
-									<a class="direction-card__more" type="button" data-toggle="modal" data-target="#playground" data-backdrop="true">Заявка</a>
+									<a class="btn-nav btn-recall direction-card__more" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">Заявка</a>
 								</div>
 							</div>
 							<!-- end bottom buttons -->
@@ -556,11 +554,12 @@
 	</footer>
 	<!-- end footer -->
 	<p class="year text-center">Информация на сайте не является публичной офертой</p>
-		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ form modals //////////////////////////////////////  -->
 
-	<div class="modal-full-form" id="form-callback" style="display: none;">
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ form modals //////////////////////////////////////  -->
+
+	<div class="modal-form center-block" id="form-callback" style="display: none;">
 		<div class="modal-form__wrapper">
-			<h3 class="modal-title js-form-heading">Оставьте заявку до конца дня и зафиксируйте цену!</h3>
+			<h3 class="modal-form__heading js-form-heading">Оставьте заявку до конца дня и зафиксируйте цену!</h3>
 			<p class="modal-form__description js-form-description">С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости</p>
 			<form class="modal-form__form js-form">
 				<!-- Hidden Required Fields -->
@@ -587,84 +586,29 @@
 		</div>
 	</div>
 
+
+
+
+
+
+
+
+
 	<!--modals "our main directions"-->
-	<div class="modal fade" id="playground" tabindex="-1" role="dialog" aria-labelledby="playgroundLabel" data-backdrop="false" aria-hidden="false">
-		<div class="modal-dialog modal-lg direction">
+	<div class="container" id="modal-direction-01" style="display: none; background-color: transparent;">
+		<div class="direction">
 			<div class="modal-content modal-our-directions">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">закрыть</button>
-					<h4 class="modal-title" id="playgroundLabel">Покрытие для детских площадок</h4>
+					<h4 class="modal-title" id="playgroundLabel">Абонентское обслуживание юридических лиц</h4>
 				</div>
 				<div class="modal-body">
 					<div class="modal-text-description">
-						<p>Детские площадки с бесшовным покрытием удовлетворяют современным стандартам безопасности. Этот большой яркий ковер пропускающий воду, устойчив к температурным перепадам.</p>
-						<p>Это отличное с точки зрения безопасности покрытие прекрасно подходит для использования как внутри помещений, так и для игр на свежем воздухе. Резиновое покрытие практически не требует ухода. При необходимости его можно помыть водой из шланга или подмести, трава не прорастет через резиновое покрытие.</p>
-						<p>В связи с тем, что резиновое покрытие укладывается на плотно утрамбованный отсев, асфальт или бетон как целостное бесшовное покрытие - является очень прочным и износостойким. При необходимости резиновое покрытие подлежит не сложному ремонту.</p>
-						<p>Мы готовы реализовать любые самые смелые и интересные идеи, при этом такие детские площадки являются безопасными для детей, что наиболее важно, а также просты и удобны в уходе.</p>
+						<p><span style="text-decoration: underline;">Абонентское обслуживание</span> - это разработка, составление и проверка гражданско-правовых договоров, внесение корректировок, составление претензий, исков, подготовка ответов на претензии, отзывы и т.п., </p>
+						<p>Формирование и подача исковых заявлений, заявлений в суд, проведение экспертизы различного рода документов (договоров, дополнительных соглашений и др. документов), дача заключений различного правового характера, представительство в судах (арбитражный, суды общей юрисдикции), разработка корпоративных документов, разработка кадровых документов, участие в переговорах, представление интересов юридических лиц в гос. органах (составление жалоб и заявлений, возражений на постановление и предписание государственных органов),проведение необходимых проверок компаний, в том числе по трудовому праву.</p>
+						<p style="text-decoration: underline;">Вам всего лишь потребуется заключить с нами Договор и приобрести наиболее выгодный для Вас тариф (стоимость за 1 месяц):</p>
+						<br>
+						<h4>Эконом <span style="float: right;">От 15 000руб.</span></h4>
 					</div>
-					<div class="modal-text-character">
-						<table>
-							<tr class="table-header">
-								<th>Преимущества:</th>
-							</tr>
-							<tr>
-								<td>Обладает ударопоглащающим эффектом</td>
-							</tr>
-							<tr>
-								<td>Использование температуры от -40 до +40</td>
-							</tr>
-							<tr>
-								<td>Высокая прочность и необычайная долговечность</td>
-							</tr>
-							<tr>
-								<td>Отсутствие стыков и швов</td>
-							</tr>
-							<tr class="table-header">
-								<th>Применяется:</th>
-							</tr>
-							<tr>
-								<td>Открытые детские и игровые площадки</td>
-							</tr>
-							<tr>
-								<td>Открытые спортивные площадки</td>
-							</tr>
-							<tr>
-								<td>Теннисные корты</td>
-							</tr>
-							<tr>
-								<td>Беговые дорожки</td>
-							</tr>
-							<tr>
-								<td>Пешеходные зоны, дорожки</td>
-							</tr>
-							<tr>
-								<td>Покрытие вокруг бассейна</td>
-							</tr>
-							<tr>
-								<td>Отмостки вокруг дома или коттеджа</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<form role="form" class="form-inline">
-						<input type="hidden" name="project_name" value="Эко-Спорт">
-						<input type="hidden" name="admin_email" value="urpartnery1@gmail.com">
-						<input type="hidden" name="form_subject" value="детские площадки">
-						<div class="form-group col-lg-3 col-xs-12">
-							<input type="text" class="form-control" name="Имя" id="howemail1" placeholder="Ваше имя" required>
-						</div>
-						<div class="form-group col-lg-3 col-xs-12">
-							<input type="email" class="form-control" name="e-mail" id="howmail1" placeholder="Ваш email">
-						</div>
-						<div class="form-group col-lg-3 col-xs-12">
-							<input type="phone" class="form-control" name="Телефон" id="howphone1" placeholder="Ваш телефон" required>
-						</div>
-						<div class="form-group col-lg-3 col-xs-12">
-							<button type="submit" class="btn btn-form-ecosprot pointer-over">узнать подробнее</button>
-						</div>
-						<p>С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости</p>
-					</form>
 				</div>
 			</div>
 		</div>

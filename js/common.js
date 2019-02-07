@@ -41,12 +41,15 @@ $(document).ready(function() {
 	  $('.js-form [name=form_subject]').val(info);
 	});
 
+
 	$('a[data-src="#form-callback"]').on('click', function() {
 	  var metrika = $(this).data('fmetrika');
 	  var header = $(this).data('fhead');
 	  var info = $(this).data('finfo');
+	  var description = $(this).data('fdescript');
 	  $('.popup-callback').attr('onsubmit', metrika);
 	  $('.js-form-heading').text(header);
+	  $('.js-form-description').text(description);
 	  $('.popup-callback [name=form_subject]').val(info);
 	});
 

@@ -623,8 +623,8 @@ body input:focus {
 }
 #top-panel .container .tel-number .btn-recall {
   display: block;
-  color: #2879ff;
-  background-color: #fcc51d;
+  color: #ffffff;
+  background-color: #bd2020;
   width: 80%;
   text-align: center;
   padding: 4px 8px;
@@ -637,7 +637,7 @@ body input:focus {
 }
 #top-panel .container .tel-number .btn-recall:hover {
   color: #292929;
-  background-color: #bd2020;
+  background-color: #fcc51d;
 }
 #top-panel .container .tel-number .work-time {
   margin: 0;
@@ -2012,9 +2012,13 @@ body input:focus {
 }
 .modal-form__button {
   min-height: 44px;
+  min-width: 230px;
+  background-color: #bd2020;
+  color: #ffffff;
 }
 .modal-form__button:hover {
-  color: #e6e6e6;
+  background-color: #fcc51d;
+  color: #292929;
 }
 .modal-form__thanks {
   position: absolute;
@@ -2027,10 +2031,14 @@ body input:focus {
   padding: 12px;
   text-align: center;
   background-color: white;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .modal-form__thanks-heading {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 20px;
 }
 .modal-form__thanks-text {
@@ -2063,10 +2071,6 @@ body input:focus {
   display: inline-flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-}
-.modal-our-directions .modal-body .modal-text-description {
-  display: inline-block;
-  width: 60%;
 }
 .modal-our-directions .modal-body .modal-text-description p {
   width: 100%;

@@ -474,8 +474,8 @@ body {
 				}
 				.btn-recall {
 					display: block;
-					color: @main;
-					background-color: @yellow;
+					color: @white;
+					background-color: @red;
 					width: 80%;
 					text-align: center;
 					padding: 4px 8px;
@@ -484,7 +484,7 @@ body {
 					.trans(all 0.1s);
 					&:hover {
 						color: @graf;
-						background-color: @red;
+						background-color: @yellow;
 					}
 				}
 				.work-time {
@@ -1795,8 +1795,12 @@ body {
 	}
 	&__button{
 		min-height: 44px;
+		min-width: 230px;
+		background-color: @red;
+		color: @white;
 		&:hover{
-			color: darken(white, 10%);
+			background-color: @yellow;
+			color: @graf;
 
 		}
 
@@ -1812,9 +1816,10 @@ body {
 		padding: 12px;
 		text-align: center;
 		background-color: white;
+		.trans(.3s);
 		&-heading{
 			font-size: 36px;
-			font-weight: 500;
+			font-weight: 700;
 			margin-top: 20px;
 
 		}
@@ -1856,8 +1861,6 @@ body {
 		display: inline-flex;
 		justify-content: space-around;
 		.modal-text-description {
-			display: inline-block;
-			width: 60%;
 			p {
 				width: 100%;
 				font-size: 75%;
