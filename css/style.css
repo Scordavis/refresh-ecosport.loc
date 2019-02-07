@@ -636,7 +636,7 @@ body input:focus {
   transition: all 0.1s;
 }
 #top-panel .container .tel-number .btn-recall:hover {
-  color: #ffffff;
+  color: #292929;
   background-color: #bd2020;
 }
 #top-panel .container .tel-number .work-time {
@@ -897,7 +897,7 @@ body input:focus {
   transition: all 0.1s;
 }
 .first-screen .relative-logo-block .tel-number .btn-recall:hover {
-  color: #ffffff;
+  color: #292929;
   background-color: #fcc51d;
 }
 .first-screen .relative-logo-block .tel-number .work-time {
@@ -998,7 +998,7 @@ body input:focus {
 .first-screen .header-form .form-inline .form-group input {
   width: 100%;
   text-align: center;
-  color: #2879ff;
+  color: #5c5c5c;
   font-style: italic;
 }
 .first-screen .header-form .form-inline .btn-form-ecosprot {
@@ -1012,7 +1012,7 @@ body input:focus {
   transition: all 0.3s;
 }
 .first-screen .header-form .form-inline .btn-form-ecosprot:hover {
-  color: #ffffff;
+  color: #292929;
   background-color: #fcc51d;
 }
 .first-screen .header-form .form-inline p {
