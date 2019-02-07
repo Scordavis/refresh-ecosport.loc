@@ -3803,16 +3803,10 @@ body input:focus {
     z-index: 2;
   }
   .second-screen .container .direction-card {
-    position: relative;
-    display: block;
-    width: 80%;
-    margin: 0 auto 20px;
-    background-color: #00447d;
-    padding: 12px;
+    margin: 0 auto 40px;
   }
   .second-screen .container .direction-card p {
     min-height: inherit;
-    color: #ffffff;
     font-size: 120%;
     font-weight: 300;
     text-align: center;
@@ -3871,58 +3865,33 @@ body input:focus {
     padding-bottom: 10vh;
     background-color: #f2f2f2;
   }
-  .third-screen .container {
-    position: relative;
-    z-index: 2;
+  .table {
+    border-top: 15px solid #fcc51d;
+    border-bottom: 15px solid #fcc51d;
+    margin-bottom: 0;
   }
-  .third-screen .container .row {
-    margin: 20px 0;
-  }
-  .third-screen .container .row div:first-child {
-    margin-bottom: 20px;
-  }
-  .third-screen .container .row div .where-card {
-    width: 100%;
-    height: 200px;
-    border: 1px solid #2879ff;
-    padding: 0;
-    margin: 0;
-    color: #2879ff;
-    background-color: #ffffff;
-  }
-  .third-screen .container .row div .where-card .left {
-    width: 40%;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-  .third-screen .container .row div .where-card .left img {
+  .feature {
     width: 100%;
   }
-  .third-screen .container .row div .where-card .right {
-    height: 100%;
-    width: 60%;
+  .feature__row {
+    color: black;
+    height: 40px;
+    background-color: #fafafa;
   }
-  .third-screen .container .row div .where-card .right h2 {
-    font-size: 140%;
-    padding: 0;
-    margin: 10px 0;
+  .feature__row:nth-child(odd) {
+    background-color: #f0f0f0;
   }
-  .third-screen .container .row div .where-card .right p {
-    font-size: 80%;
-    font-weight: 400;
+  .feature__row--header {
+    height: 100px;
+    color: #4d4d4d;
+    font-weight: 500;
+    background-color: transparent;
   }
-  .third-screen .container .row div .where-card .view {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    padding: 0 15px;
-    margin: 10px;
-    font-size: 80%;
-    text-decoration: underline;
-    color: #ffffff;
-    cursor: pointer;
+  .feature__data {
+    padding: 4px 12px;
+  }
+  .feature__img {
+    max-width: 182px;
   }
   /*-------------------------prices-----------------------------*/
   .fourth-screen {
@@ -4927,16 +4896,8 @@ body input:focus {
     position: relative;
     z-index: 2;
   }
-  .second-screen .container .direction-card {
-    position: relative;
-    display: block;
-    width: 250px;
-    margin: 0 auto 20px;
-    padding: 12px;
-  }
   .second-screen .container .direction-card p {
     min-height: inherit;
-    color: #ffffff;
     font-size: 120%;
     font-weight: 300;
     text-align: center;
@@ -4972,327 +4933,48 @@ body input:focus {
     color: #00447d;
     font-size: 24px;
   }
-  .third-screen {
-    position: relative;
-    border-top: 1px solid #2879ff;
-    border-bottom: 1px solid #2879ff;
-    padding-bottom: 0vh;
-    background-color: #f2f2f2;
+  .table {
+    border-top: 15px solid #2879ff;
+    border-bottom: 15px solid #2879ff;
+    margin-bottom: 0;
   }
-  .third-screen .container {
-    position: relative;
-    z-index: 2;
-  }
-  .third-screen .container .row {
-    margin: 20px 0;
-  }
-  .third-screen .container .row div:first-child {
-    margin-bottom: 20px;
-  }
-  .third-screen .container .row div .where-card {
-    width: 100%;
-    height: 200px;
-    border: 1px solid #2879ff;
-    padding: 0;
-    margin: 0;
-    color: #2879ff;
-    background-color: #ffffff;
-    overflow: visible;
-  }
-  .third-screen .container .row div .where-card .left {
-    width: 100%;
-    padding: 0;
-    height: auto;
-    overflow: hidden;
-  }
-  .third-screen .container .row div .where-card .left img {
+  .feature {
     width: 100%;
   }
-  .third-screen .container .row div .where-card .right {
-    height: auto;
-    width: 100%;
+  .feature__row {
+    color: #808080;
+    height: 40px;
+    background-color: #f0f0f0;
   }
-  .third-screen .container .row div .where-card .right h2 {
-    font-size: 140%;
-    padding: 0;
-    margin: 10px 0;
-    text-align: center;
-  }
-  .third-screen .container .row div .where-card .right p {
-    text-align: center;
-    font-size: 80%;
-    font-weight: 400;
-  }
-  .third-screen .container .row div .where-card .view {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    padding: 0 15px;
-    margin: 10px;
-    font-size: 80%;
-    text-decoration: underline;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  /*-------------------------prices-----------------------------*/
-  .fourth-screen {
-    position: relative;
-    padding-bottom: 0;
-  }
-  .fourth-screen .container .row div {
-    margin-bottom: 20px;
-  }
-  .fourth-screen .container .row div .price {
-    position: relative;
-    min-height: 600px;
-    width: 100%;
+  .feature__row:nth-child(odd) {
     background-color: #fafafa;
-    -webkit-box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
   }
-  .fourth-screen .container .row div .price .title-price-card {
-    position: relative;
-    top: 8px;
-    width: 95%;
-    background-color: #1ddafc;
-    margin: auto;
-    border-radius: 6px;
-    padding: 8px;
-    cursor: pointer;
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-    -o-transition: all 300ms;
-    transition: all 300ms;
-  }
-  .fourth-screen .container .row div .price .title-price-card:hover {
-    background-color: #2879ff;
-    border-radius: 6px;
-    -webkit-transition: all 0.3;
-    -moz-transition: all 0.3;
-    -o-transition: all 0.3;
-    transition: all 0.3;
-  }
-  .fourth-screen .container .row div .price .title-price-card img {
-    width: 100%;
-    margin: auto;
-    display: block;
-  }
-  .fourth-screen .container .row div .price .title-price-card p {
-    text-align: center;
-    padding: 8px 0 0;
-    color: #ffffff;
-    font-size: 120%;
-  }
-  .fourth-screen .container .row div .price hr {
-    width: 100%;
-  }
-  .fourth-screen .container .row div .price .price-content {
-    padding: 8px 12px;
-    min-height: 370px;
-  }
-  .fourth-screen .container .row div .price .price-content .title-price-list {
-    padding: 0;
-    font-size: 4vw;
-    margin-bottom: 20px;
-  }
-  .fourth-screen .container .row div .price .price-content #stab-layer {
-    margin-bottom: 10px;
-  }
-  .fourth-screen .container .row div .price .price-content #stab-layer span {
-    font-weight: 900;
-  }
-  .fourth-screen .container .row div .price .price-footer {
-    position: relative;
-    bottom: 0px;
-    padding: 0 10px 20px;
-  }
-  .fourth-screen .container .row div .price .price-footer .price-description {
-    margin: auto;
-    font-size: 100%;
-    width: 100%;
-  }
-  .fourth-screen .container .row div .price .price-footer .price-self-old {
-    font-size: 100%;
-    text-align: center;
-    margin-bottom: 4px;
-  }
-  .fourth-screen .container .row div .price .price-footer .price-self-old span {
-    text-decoration: line-through;
-  }
-  .fourth-screen .container .row div .price .price-footer .price-self {
-    text-align: center;
-    font-size: 160%;
-    color: #fcc51d;
-  }
-  .fourth-screen .container .row div .price .price-footer .btn-price {
-    width: 90%;
-    padding: 4px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  .fourth-screen .container .row div .price .price-footer .btn-price:hover {
-    background-color: #fcc51d;
-    color: #1a1a1a;
-    border-radius: 0;
-  }
-  /*-----------------------promo------------------------------*/
-  .fifth-screen {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcc41e+0,f9d46d+100 */
-    background: #fcc41e;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #fcc41e 0%, #f9d46d 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #fcc41e 0%, #f9d46d 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#fcc41e), to(#f9d46d));
-    background: -o-linear-gradient(left, #fcc41e 0%, #f9d46d 100%);
-    background: linear-gradient(to right, #fcc41e 0%, #f9d46d 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc41e', endColorstr='#f9d46d', GradientType=1);
-    /* IE6-9 */
-    position: relative;
-  }
-  .fifth-screen .container {
-    position: relative;
-    margin-top: 40px;
-    color: #000000;
-    z-index: 2;
-  }
-  .fifth-screen .container .promo-text {
-    border-left: none;
-  }
-  .fifth-screen .container .promo-text h2 {
-    font-size: 8vw;
-    margin: 0 auto 40px;
-    text-align: center;
-  }
-  .fifth-screen .container .promo-text p {
-    text-align: center;
-    font-size: 6vw;
-  }
-  .fifth-screen .container .promo-text p span {
-    border-bottom: 1px dashed #000000;
-  }
-  .fifth-screen .container .promo-text .cell-form {
-    height: 100%;
-  }
-  .fifth-screen .container .wrapper {
-    margin: 60px auto;
-  }
-  .fifth-screen .container .wrapper h2 {
-    font-size: 7vw;
-    text-align: center;
-  }
-  .fifth-screen .container .wrapper .cell-form {
-    position: relative;
-    width: 100%;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group {
-    display: block;
-    width: 100%;
-    margin: 0 auto 20px;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group ::-webkit-input-placeholder {
-    color: #2879ff;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group :-moz-placeholder,
-  .fifth-screen .container .wrapper .cell-form .form-group ::-moz-placeholder {
-    color: #2879ff;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group :-ms-input-placeholder {
-    color: #2879ff;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group input {
-    display: block;
-    width: 100%;
-    min-height: 45px;
-    margin: auto;
-    background-color: #ffffff;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-align: center;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    padding: 8px 4px;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group input:focus {
-    color: #2879ff;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group button {
-    display: block;
-    margin: auto;
-    width: 100%;
-    min-height: 45px;
-    background: #2879ff;
-    border: 2px solid #2879ff;
-    border-radius: 10px;
-    color: #fcc51d;
-    text-transform: uppercase;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .fifth-screen .container .wrapper .cell-form .form-group button:hover {
+  .feature__row:first-child {
     background-color: transparent;
-    color: #2879ff;
-    font-weight: 900;
   }
-  /*-----------------------example work------------------------*/
-  .six-screen {
-    padding-bottom: 10vh;
-    border-bottom: 1px solid #2879ff;
-    background-color: #ffffff;
+  .feature__row--header {
+    display: none;
   }
-  /*-----------------------video-------------------------------*/
-  .seventh-screen {
-    padding-bottom: 10vh;
-    border-bottom: 1px solid #2879ff;
-    background-color: #f2f2f2;
-  }
-  .seventh-screen .container h3 {
-    width: 100%;
-    color: #00447d;
-    margin: 0 auto 50px;
-    padding: 0 0 20px;
-    font-weight: 400;
+  .feature__data {
+    display: block;
+    padding: 8px 16px;
     text-align: center;
-    border-bottom: 1px solid #2879ff;
   }
-  .seventh-screen .container .video {
+  .feature__data:first-child {
+    background-color: #4d4d4d;
+    color: white;
+  }
+  .feature__data:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: block;
     text-align: center;
-    width: 100%;
-    margin-bottom: 40px;
   }
-  .seventh-screen .container .video iframe {
-    width: 100%;
+  .feature__data:not(:last-child) {
+    border-bottom: 1px solid #666666;
   }
-  .seventh-screen .container .video-description {
-    color: #2879ff;
-  }
-  .seventh-screen .container .video-description ol {
-    list-style-type: none;
-    counter-reset: num;
-    list-style-position: outside;
-    padding-left: 0;
-  }
-  .seventh-screen .container .video-description ol li {
-    list-style-position: outside;
-    margin: 0;
-    padding: 0;
-    font-size: 90%;
-  }
-  .seventh-screen .container .video-description ol li:before {
-    content: counter(num) '. ';
-    /* Выводим число */
-    counter-increment: num;
-    font-size: 180%;
-    font-weight: 700;
-    color: #fcc51d;
-    padding: 0;
-    margin: 0;
+  .feature__img {
+    max-width: 182px;
   }
   /*--------------------feedback-------------------*/
   .eighth-screen {

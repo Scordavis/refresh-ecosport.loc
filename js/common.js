@@ -79,32 +79,6 @@ $(document).ready(function() {
 		});
 
 
-	$("a.js-slideDown").click(function() {
-		$("html, body").animate({
-			scrollTop: $($(this).attr("href")).offset().top + "px"
-		}, {
-			duration: 500,
-			easing: "swing"
-		});
-		return false;
-	});
-
-	$("#up").click(function() {
-		$("html, body").animate({
-			scrollTop: $($(this).attr("href")).offset().top + "px"
-		}, {
-			duration: 500,
-			easing: "swing"
-		});
-		return false;
-	});
-
-
-
-
-
-
-
 		var headertext = [],
 		headers = document.querySelectorAll(".feature th"),
 		tablerows = document.querySelectorAll(".feature th"),
@@ -119,15 +93,6 @@ $(document).ready(function() {
 				col.setAttribute("data-th", headertext[j]);
 			}
 		};
-
-
-
-
-
-
-
-
-
 
 
 

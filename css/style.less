@@ -3024,16 +3024,9 @@ body {
 			z-index: 2;
 			.row-card {}
 			.direction-card {
-				position: relative;
-				display: block;
-				width: 80%;
-				margin: 0 auto 20px;
-				background-color: @text;
-				padding: 12px;
-				&:hover {}
+				margin: 0 auto 40px;
 				p {
 					min-height: inherit;
-					color: @white;
 					font-size: 120%;
 					font-weight: 300;
 					text-align: center;
@@ -3095,62 +3088,69 @@ body {
 		border-bottom: 1px solid @main;
 		padding-bottom: 10vh;
 		background-color: darken(@white, 5%);
-		.container {
-			position: relative;
-			z-index: 2;
-			.row {
-				margin: 20px 0;
-				div {
-					&:first-child {
-						margin-bottom: 20px;
-					}
-					.where-card {
-						width: 100%;
-						height: 200px;
-						border: 1px solid @main;
-						padding: 0;
-						margin: 0;
-						color: @main;
-						background-color: @white;
-						.left {
-							width: 40%;
-							padding: 0;
-							height: 100%;
-							overflow: hidden;
-							img {
-								width: 100%;
-							}
-						}
-						.right {
-							height: 100%;
-							width: 60%;
-							h2 {
-								font-size: 140%;
-								padding: 0;
-								margin: 10px 0;
-							}
-							p {
-								font-size: 80%;
-								font-weight: 400;
-							}
-						}
-						.view {
-							position: absolute;
-							bottom: 0;
-							right: 0;
-							text-align: right;
-							padding: 0 15px;
-							margin: 10px;
-							font-size: 80%;
-							text-decoration: underline;
-							color: lighten(@main, 60%);
-							cursor: pointer;
-						}
-					}
-				}
-			}
-		}
 	}
+
+
+
+// start table-block
+.table{
+	border-top: 15px solid @yellow;
+	border-bottom: 15px solid @yellow;
+	margin-bottom: 0;
+
+	&__wrapper{
+
+	}
+
+}
+
+.feature{
+	width: 100%;
+
+	&__row{
+		color: black;
+		height: 40px;
+		background-color: darken(white, 2%);
+		&:nth-child(odd){
+			background-color: darken(white, 6%);
+
+		}
+		&:first-child{
+
+		}
+		&--header{
+			height: 100px;
+			color: darken(white, 70%);
+			font-weight: 500;
+			background-color: transparent;
+
+		}
+
+	}
+	&__data{
+		padding: 4px 12px;
+
+	}
+	&__img{
+		max-width: 182px;
+	}
+
+}
+// end table-block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*-------------------------prices-----------------------------*/
 	.fourth-screen {
 		position: relative;
@@ -3960,15 +3960,8 @@ h2 {
 		z-index: 2;
 		.row-card {}
 		.direction-card {
-			position: relative;
-			display: block;
-			width: 250px;
-			margin: 0 auto 20px;
-			padding: 12px;
-			&:hover {}
 			p {
 				min-height: inherit;
-				color: @white;
 				font-size: 120%;
 				font-weight: 300;
 				text-align: center;
@@ -4018,309 +4011,65 @@ h2 {
 	}
 
 }
-// where we work card
-.third-screen {
-	position: relative;
-	border-top: 1px solid @main;
-	border-bottom: 1px solid @main;
-	padding-bottom: 0vh;
-	background-color: darken(@white, 5%);
-	.container {
-		position: relative;
-		z-index: 2;
-		.row {
-			margin: 20px 0;
-			div {
-				&:first-child {
-					margin-bottom: 20px;
-				}
-				.where-card {
-					width: 100%;
-					height: 200px;
-					border: 1px solid @main;
-					padding: 0;
-					margin: 0;
-					color: @main;
-					background-color: @white;
-					overflow: visible;
-					.left {
-						width: 100%;
-						padding: 0;
-						height: auto;
-						overflow: hidden;
-						img {
-							width: 100%;
-						}
-					}
-					.right {
-						height: auto;
-						width: 100%;
-						h2 {
-							font-size: 140%;
-							padding: 0;
-							margin: 10px 0;
-							text-align: center;
-						}
-						p {
-							text-align: center;
-							font-size: 80%;
-							font-weight: 400;
-						}
-					}
-					.view {
-						position: absolute;
-						bottom: 0;
-						right: 0;
-						text-align: right;
-						padding: 0 15px;
-						margin: 10px;
-						font-size: 80%;
-						text-decoration: underline;
-						color: lighten(@main, 60%);
-						cursor: pointer;
-					}
-				}
-			}
+.table{
+		border-top: 15px solid @main;
+		border-bottom: 15px solid @main;
+		margin-bottom: 0;
+
+		&__wrapper{
+
 		}
+
 	}
-}
-/*-------------------------prices-----------------------------*/
-.fourth-screen {
-	position: relative;
-	padding-bottom: 0;
-	.container {
-		.row {
-			div {
-				margin-bottom: 20px;
-				.price {
-					position: relative;
-					min-height: 600px;
-					width: 100%;
-					background-color: darken(@white, 2%);
-					box-shadow: 2px 2px 18px fadeout(@dark, 80%);
-					border-radius: 6px;
-					.title-price-card {
-						position: relative;
-						top: 8px;
-						width: 95%;
-						background-color: spin(@yellow, 144);
-						margin: auto;
-						border-radius: 6px;
-						padding: 8px;
-						cursor: pointer;
-						.trans(all 300ms);
-						&:hover {
-							background-color: @main;
-							border-radius: 6px;
-							.trans(all 0.3);
-						}
-						img {
-							width: 100%;
-							margin: auto;
-							display: block;
-						}
-						p {
-							text-align: center;
-							padding: 8px 0 0;
-							color: @white;
-							font-size: 120%;
-						}
-					}
-					hr {
-						width: 100%;
-					}
-					.price-content {
-						padding: 8px 12px;
-						min-height: 370px;
-						.title-price-list {
-							padding: 0;
-							font-size: 4vw;
-							margin-bottom: 20px;
-						}
-						#stab-layer {
-							margin-bottom: 10px;
-							span {
-								font-weight: 900;
-							}
-						}
-					}
-					.price-footer {
-						position: relative;
-						bottom: 0px;
-						padding: 0 10px 20px;
-						.price-description {
-							margin: auto;
-							font-size: 100%;
-							width: 100%;
-						}
-						.price-self-old {
-							font-size: 100%;
-							text-align: center;
-							margin-bottom: 4px;
-							span {
-								text-decoration: line-through;
-							}
-						}
-						.price-self {
-							text-align: center;
-							font-size: 160%;
-							color: @yellow;
-						}
-						.btn-price {
-							width: 90%;
-							padding: 4px;
-							cursor: pointer;
-							border-radius: 4px;
-							&:hover {
-								background-color: @yellow;
-								color: lighten(@dark, 10%);
-								border-radius: 0;
-							}
-						}
-					}
-				}
+
+	.feature{
+		width: 100%;
+		&__row{
+			color: darken(white, 50%);
+			height: 40px;
+			background-color: darken(white, 6%);
+			&:nth-child(odd){
+				background-color: darken(white, 2%);
+
 			}
+			&:first-child{
+				background-color: transparent;
+
+			}
+			&--header{
+				display: none;
+
+			}
+
 		}
-	}
-}
-/*-----------------------promo------------------------------*/
-.fifth-screen {
-	.grad;
-	position: relative;
-	.container {
-		position: relative;
-		margin-top: 40px;
-		color: @dark;
-		z-index: 2;
-		.promo-text {
-			border-left: none;
-			h2 {
-				font-size: 8vw;
-				margin: 0 auto 40px;
-				text-align: center;
-			}
-			p {
-				text-align: center;
-				font-size: 6vw;
-				span {
-					border-bottom: 1px dashed @dark;
-				}
-			}
-			.cell-form {
-				height: 100%;
-			}
-		}
-		.wrapper {
-			margin: 60px auto;
-			h2 {
-				font-size: 7vw;
-				text-align: center;
-			}
-			.cell-form {
-				position: relative;
-				width: 100%;
-				.form-group {
-					display: block;
-					width: 100%;
-					margin: 0 auto 20px;
-					.placeholder-cellphone;
-					input {
-						display: block;
-						width: 100%;
-						min-height: 45px;
-						margin: auto;
-						background-color: @white;
-						box-shadow: none;
-						text-align: center;
-						border: 2px solid @white;
-						border-radius: 10px;
-						padding: 8px 4px;
-						&:focus {
-							color: @main;
-						}
-					}
-					button {
-						display: block;
-						margin: auto;
-						width: 100%;
-						min-height: 45px;
-						background: @main;
-						border: 2px solid @main;
-						border-radius: 10px;
-						color: @yellow;
-						text-transform: uppercase;
-						.trans(all 0.3s);
-						&:hover {
-							background-color: transparent;
-							color: @main;
-							font-weight: 900;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-/*-----------------------example work------------------------*/
-.six-screen {
-	padding-bottom: 10vh;
-	border-bottom: 1px solid @main;
-	background-color: @white;
-	.container {
-		#example-done-work {
-		}
-	}
-}
-/*-----------------------video-------------------------------*/
-.seventh-screen {
-	padding-bottom: 10vh;
-	border-bottom: 1px solid @main;
-	background-color: darken(@white, 5%);
-	.container {
-		h3 {
-			width: 100%;
-			color: @text;
-			margin: 0 auto 50px;
-			padding: 0 0 20px;
-			font-weight: 400;
+		&__data{
+			display: block;
+			padding: 8px 16px;
 			text-align: center;
-			border-bottom: 1px solid @main;
-		}
-		.video {
-			text-align: center;
-			width: 100%;
-			margin-bottom: 40px;
-			iframe {
-				width: 100%;
+			&:first-child{
+				background-color: lighten(black, 30%);
+				color: white;
+
 			}
-		}
-		.video-description {
-			color: @main;
-			ol {
-				list-style-type: none;
-				counter-reset: num;
-				list-style-position: outside;
-				padding-left: 0;
-				li {
-					list-style-position: outside;
-					margin: 0;
-					padding: 0;
-					font-size: 90%;
-					&:before {
-						content: counter(num) '. ';
-						/* Выводим число */
-						counter-increment: num;
-						font-size: 180%;
-						font-weight: 700;
-						color: @yellow;
-						padding: 0;
-						margin: 0;
-					}
-				}
+			&:before{
+				content: attr(data-th);
+				font-weight: bold;
+				display: block;
+				text-align: center;
+
 			}
+			&:not(:last-child){
+				border-bottom: 1px solid lighten(black, 40%);
+
+			}
+
 		}
+		&__img{
+			max-width: 182px;
+		}
+
 	}
-}
+	// end table-block
 /*--------------------feedback-------------------*/
 .eighth-screen {
 	position: relative;
