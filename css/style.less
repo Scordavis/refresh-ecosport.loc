@@ -782,6 +782,8 @@ body {
 				background-color: darken(@white, 10%);
 				&:hover {}
 				h3{
+					min-height: 50px;
+					margin-top: 10px;
 					font-size: 120%;
 					font-weight: 500;
 					text-align: left;
@@ -796,11 +798,29 @@ body {
 				}
 				&__link-wrapper{
 					display: block;
-					text-align: left;
+					&--right{
+						text-align: right;
+					}
+					&--center{
+						text-align: center;
+					}
 				}
 				&__link-wrapper:nth-child(2){
 					display: block;
-					text-align: right;
+				}
+				&__button{
+					display: block;
+					max-width: 200px;
+					margin: 10px auto;
+					padding: 4px 16px;
+					background-color: @red;
+					color: @white;
+					border-radius: 4px;
+					.trans(.2s);
+					&:hover{
+						background-color: @yellow;
+						color: @graf;
+					}
 				}
 				&__more{
 					text-align: right;

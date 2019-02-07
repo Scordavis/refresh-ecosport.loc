@@ -179,7 +179,7 @@
 		<div class="container">
 			<h2 class="block-header">Наши основные направления</h2>
 			<div class="row row-card">
-				<!-- direction card -->
+				<!-- direction card 1-->
 				<div class="col-xs-12 col-sm-6">
 						<div class="direction-card" data-aos="flip-right">
 							<div class="row">
@@ -198,8 +198,35 @@
 								<div class="col-xs-12 col-sm-6 direction-card__link-wrapper">
 									<a class="direction-card__more" type="button" data-fancybox data-src="#modal-direction-01">Подробнее</a>
 								</div>
-								<div class="col-xs-12 col-sm-6 direction-card__link-wrapper">
+								<div class="col-xs-12 col-sm-6 direction-card__link-wrapper direction-card__link-wrapper--right">
 									<a class="btn-nav btn-recall direction-card__more" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">Заявка</a>
+								</div>
+							</div>
+							<!-- end bottom buttons -->
+						</div>
+				</div>
+				<!-- end direction card -->
+
+				<!-- direction card 2 -->
+				<div class="col-xs-12 col-sm-6">
+						<div class="direction-card" data-aos="flip-right">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="img/ico-deal.svg" alt="" class="img-responsive direction-card__icon">
+								</div>
+								<div class="col-md-10">
+									<h3>Договорная работа</h3>
+								</div>
+							</div>
+							<p class="direction-card__description direction-card__description--bordered">Наша компания «Юридические партнеры» оперативно и грамотно разработает, проведет экспертизу различного рода гражданско-правовых договоров. Для этого Вам не надо приезжать к нам в офис, тратить свое время и деньги, достаточно будет отправить нам заявку, в которой Вы укажете какого рода сделка Вам необходима, предмет, цель, стороны сделки.</p>
+							<p class="direction-card__description">Для более качественного предоставления такого рода услуги с Вами свяжется наш юрист и задаст все необходимые вопросы.</p>
+							<!-- bottom buttons -->
+							<div class="row">
+								<div class="col-xs-12 direction-card__link-wrapper direction-card__link-wrapper--right">
+									<a class="direction-card__more direction-card__more" type="button" data-fancybox data-src="#modal-direction-02">Подробнее</a>
+								</div>
+								<div class="col-xs-12 direction-card__link-wrapper direction-card__link-wrapper--center">
+									<a class="direction-card__button" data-fancybox data-src="#form-callback" data-finfo="Заказать звонок(главная): модальное окно в шапке сайта" data-fmetrika="onsubmit='yaCounter45417420.reachGoal('mainnav'); return true;'" data-fhead="Оставьте заявку до конца дня и зафиксируйте цену!" data-fdescript="С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости" href="javascript:;">Заявка</a>
 								</div>
 							</div>
 							<!-- end bottom buttons -->
@@ -557,6 +584,7 @@
 
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ form modals //////////////////////////////////////  -->
 
+	<!--    modal full form-->
 	<div class="modal-form center-block" id="form-callback" style="display: none;">
 		<div class="modal-form__wrapper">
 			<h3 class="modal-form__heading js-form-heading">Оставьте заявку до конца дня и зафиксируйте цену!</h3>
@@ -586,16 +614,8 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-
-
 	<!--modals "our main directions"-->
-	<div class="container" id="modal-direction-01" style="display: none; background-color: transparent;">
+	<div class="container" id="modal-direction-01" style="display: none;">
 		<div class="direction">
 			<div class="modal-content modal-our-directions">
 				<div class="modal-header">
@@ -607,134 +627,59 @@
 						<p>Формирование и подача исковых заявлений, заявлений в суд, проведение экспертизы различного рода документов (договоров, дополнительных соглашений и др. документов), дача заключений различного правового характера, представительство в судах (арбитражный, суды общей юрисдикции), разработка корпоративных документов, разработка кадровых документов, участие в переговорах, представление интересов юридических лиц в гос. органах (составление жалоб и заявлений, возражений на постановление и предписание государственных органов),проведение необходимых проверок компаний, в том числе по трудовому праву.</p>
 						<p style="text-decoration: underline;">Вам всего лишь потребуется заключить с нами Договор и приобрести наиболее выгодный для Вас тариф (стоимость за 1 месяц):</p>
 						<br>
+						<!-- tarif description -->
 						<h4>Эконом <span style="float: right;">От 15 000руб.</span></h4>
+						<ul style="list-style-type: none;">
+							<li>- работа с договорами (юридическое согласование, экспертиза, разработка) – <strong>до 5</strong>;</li>
+							<li>- досудебное разбирательство (составление претензий, переписка) – <strong>до 2</strong>;</li>
+							<li>- консультации юриста – <strong>устно без ограничений, до 2</strong> письменных консультаций</li>
+						</ul>
+						<strong>Скидка при 100% предоплате:</strong>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4"> <p>за квартал - <strong>2%</strong>,</p>  </div>
+							<div class="col-xs-12 col-sm-4"> <p>за 6 месяцев - <strong>5%</strong>,</p> </div>
+							<div class="col-xs-12 col-sm-4"> <p>за 12 месяцев - <strong>10%</strong>,</p> </div>
+						</div>
+						<!-- end tarif description -->
+						<!-- tarif description -->
+						<hr>
+						<h4>Стандарт <span style="float: right;">От 24 000руб.</span></h4>
+						<ul style="list-style-type: none;">
+							<li>- работа с договорами (юридическое согласование, экспертиза, разработка) – <strong>до 10</strong>;</li>
+							<li>- разработка локальных нормативных актов для организации (положения, инструкции, приказы, регламенты и др.) – <strong>до 5</strong>;</li>
+							<li>- досудебное разбирательство (составление претензий, переписка) – <strong>до 5</strong>;</li>
+							<li>- представительство в суде – <strong>до 2 судебных заседаний*;</strong></li>
+							<li>- консультации юриста – <strong>устно без ограничений, до 5</strong> письменных консультаций</li>
+						</ul>
+						<strong>Скидка при 100% предоплате:</strong>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4"> <p>за квартал - <strong>10%</strong>,</p>  </div>
+							<div class="col-xs-12 col-sm-4"> <p>за 6 месяцев - <strong>15%</strong>,</p> </div>
+							<div class="col-xs-12 col-sm-4"> <p>за 12 месяцев - <strong>20%</strong>,</p> </div>
+						</div>
+						<!-- end tarif description -->
+						<hr>
+						<h4>Премиум <span style="float: right;">От 34 000руб.</span></h4>
+						<ul style="list-style-type: none;">
+							<li>- работа с договорами (юридическое согласование, экспертиза, разработка) – <strong>до 15</strong>;</li>
+							<li>- сопровождение сделок с недвижимостью – <strong>до 2</strong>;</li>
+							<li>- досудебное разбирательство (составление претензий, переписка) – <strong>до 7</strong>;</li>
+							<li>- представительство в суде – <strong>до 2 судебных</strong></li>
+						</ul>
+						<strong>Скидка при 100% предоплате:</strong>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4"> <p>за квартал - <strong>5%</strong>,</p>  </div>
+							<div class="col-xs-12 col-sm-4"> <p>за 6 месяцев - <strong>10%</strong>,</p> </div>
+							<div class="col-xs-12 col-sm-4"> <p>за 12 месяцев - <strong>15%</strong>,</p> </div>
+						</div>
+						<br>
+						<!-- end tarif description -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--    modal full form-->
 
-	<div class="modal fade modal-full-form" id="direction-forms-modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Заполните форму</h4>
-				</div>
-				<div class="modal-body">
-					<form role="form" class="full-form">
-						<input type="hidden" name="project_name" value="Эко-Спорт">
-						<input type="hidden" name="admin_email" value="urpartnery1@gmail.com">
-						<input type="hidden" name="form_subject" value="эко-стандарт">
-						<div class="form-group">
-							<input type="text" class="form-control" name="Имя" id="howemail5" placeholder="Ваше имя" required>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="e-mail" id="howmail5" placeholder="Ваш email">
-						</div>
-						<div class="form-group">
-							<input type="phone" class="form-control" name="Телефон" id="howphone5" placeholder="Ваш телефон" required>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="btn btn-full-form">рассчитать</button>
-						</div>
-						<p>С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости</p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade modal-full-form" id="direction-forms-modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel3">Заполните форму</h4>
-				</div>
-				<div class="modal-body">
-					<form role="form" class="full-form">
-						<input type="hidden" name="project_name" value="Эко-Спорт">
-						<input type="hidden" name="admin_email" value="urpartnery1@gmail.com">
-						<input type="hidden" name="form_subject" value="Эко-премиум">
-						<div class="form-group">
-							<input type="text" class="form-control" name="Имя" id="howemail6" placeholder="Ваше имя" required>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="e-mail" id="howmail6" placeholder="Ваш email">
-						</div>
-						<div class="form-group">
-							<input type="phone" class="form-control" name="Телефон" id="howphone6" placeholder="Ваш телефон" required>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="btn btn-full-form">рассчитать</button>
-						</div>
-						<p>С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости</p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade modal-full-form" id="direction-forms-modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel4">Заполните форму</h4>
-				</div>
-				<div class="modal-body">
-					<form role="form" class="full-form">
-						<input type="hidden" name="project_name" value="Эко-Спорт">
-						<input type="hidden" name="admin_email" value="urpartnery1@gmail.com">
-						<input type="hidden" name="form_subject" value="покрытие">
-						<div class="form-group">
-							<input type="text" class="form-control" name="Имя" id="howemail7" placeholder="Ваше имя" required>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="e-mail" id="howmail7" placeholder="Ваш email">
-						</div>
-						<div class="form-group">
-							<input type="phone" class="form-control" name="Телефон" id="howphone7" placeholder="Ваш телефон" required>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="btn btn-full-form">рассчитать</button>
-						</div>
-						<p>С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости</p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade modal-full-form" id="direction-forms-modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel5">Заполните форму</h4>
-				</div>
-				<div class="modal-body">
-					<form role="form" class="full-form">
-						<input type="hidden" name="project_name" value="Эко-Спорт">
-						<input type="hidden" name="admin_email" value="urpartnery1@gmail.com">
-						<input type="hidden" name="form_subject" value="Трава">
-						<div class="form-group">
-							<input type="text" class="form-control" name="Имя" id="howemail8" placeholder="Ваше имя" required>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="e-mail" id="howmail8" placeholder="Ваш email">
-						</div>
-						<div class="form-group">
-							<input type="phone" class="form-control" name="Телефон" id="howphone8" placeholder="Ваш телефон" required>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="btn btn-full-form">рассчитать</button>
-						</div>
-						<p>С Вами свяжется наш менеджер в течение 14 минут для рассчета стоимости</p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 	<!--    short-forms-->
 	<div class="modal fade modal-full-form" id="short-form1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">

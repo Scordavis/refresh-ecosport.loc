@@ -1061,6 +1061,8 @@ body input:focus {
   background-color: #e6e6e6;
 }
 .second-screen .container .direction-card h3 {
+  min-height: 50px;
+  margin-top: 10px;
   font-size: 120%;
   font-weight: 500;
   text-align: left;
@@ -1075,11 +1077,32 @@ body input:focus {
 }
 .second-screen .container .direction-card__link-wrapper {
   display: block;
-  text-align: left;
+}
+.second-screen .container .direction-card__link-wrapper--right {
+  text-align: right;
+}
+.second-screen .container .direction-card__link-wrapper--center {
+  text-align: center;
 }
 .second-screen .container .direction-card__link-wrapper:nth-child(2) {
   display: block;
-  text-align: right;
+}
+.second-screen .container .direction-card__button {
+  display: block;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 4px 16px;
+  background-color: #bd2020;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.second-screen .container .direction-card__button:hover {
+  background-color: #fcc51d;
+  color: #292929;
 }
 .second-screen .container .direction-card__more {
   text-align: right;
