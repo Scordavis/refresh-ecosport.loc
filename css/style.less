@@ -642,7 +642,6 @@ body {
 				background-color: @whitetr;
 				font-weight: 700;
 				padding: 20px;
-				margin-top: 0;
 				margin-bottom: 40px;
 				font-size: 220%;
 			}
@@ -782,7 +781,9 @@ body {
 				padding: 12px;
 				color: @graf;
 				background-color: darken(@white, 10%);
-				&:hover {}
+				&__icon{
+					max-width: 46px;
+				}
 				h3{
 					min-height: 50px;
 					margin-top: 10px;
@@ -929,6 +930,47 @@ body {
 	}
 }
 // end table-block
+
+		.footer-form {
+			margin: 7vh auto 4vh;
+			h2 {
+				text-align: center;
+				color: @graf;
+				span {
+					color: @red;
+					font-weight: 700;
+					border-bottom: 1px solid @red;
+				}
+			}
+			.form-inline {
+				padding: 10px 20px;
+				.form-group {
+					input {
+						width: 100%;
+						text-align: center;
+						color: @graf;
+						font-style: italic;
+					}
+				}
+				.btn-form-ecosprot {
+					position: relative;
+					width: 100%;
+					text-transform: uppercase;
+					background-color: @red;
+					color: @white;
+					border: 1px solid @red;
+					.trans(all 0.3s);
+					&:hover {
+						color: @red;
+						background-color: transparent;
+					}
+				}
+			}
+			p {
+				margin: 5vh 0 0;
+				text-align: center;
+			}
+		}
 
 
 /*-------------------------feedback-----------------------------*/
@@ -1589,7 +1631,7 @@ body {
 					span{
 						display: block;
 						font-size: 75%;
-						color: @white;
+						color: @accent;
 						font-weight: 400;
 					}
 				}
@@ -1695,7 +1737,6 @@ body {
 				p:first-child {
 					.flih;
 					font-size: 100%;
-					color: @white;
 				}
 				p:nth-child(2) {
 					.flih;
@@ -1707,7 +1748,6 @@ body {
 					span{
 						display: block;
 						font-size: 75%;
-						color: @white;
 						font-weight: 400;
 					}
 				}
@@ -1715,7 +1755,6 @@ body {
 			.tel-number {
 				height: 100%;
 				position: relative;
-				color: @white;
 				.flph;
 				.tel {
 					.flih;
@@ -2266,7 +2305,7 @@ body {
 				.flph;
 				.tel {
 					.flih;
-					font-size: 2vw;
+					font-size: 1.5vw;
 					position: relative;
 					&:first-child {
 						&:before {
@@ -2361,7 +2400,7 @@ body {
 				p:first-child {
 					.flih;
 					font-size: 2vw;
-					color: @white;
+					color: @accent;
 					width: 100%;
 					text-align: center;
 					padding-left: 2px;
@@ -2392,7 +2431,7 @@ body {
 			.tel-number {
 				height: 100%;
 				position: relative;
-				color: @white;
+				color: @accent;
 				.flph;
 				.tel {
 					.flih;
@@ -2503,6 +2542,9 @@ body {
 			.row-card {}
 			.direction-card {
 				margin: 0 auto 40px;
+				h3{
+					text-align: center;
+				}
 				p {
 					min-height: inherit;
 					font-size: 120%;
@@ -3339,7 +3381,6 @@ body {
 			.tel-number {
 				height: 100%;
 				position: relative;
-				color: @white;
 				.flph;
 				.tel {
 					.flih;
@@ -3438,6 +3479,13 @@ h2 {
 		z-index: 2;
 		.row-card {}
 		.direction-card {
+			&__icon{
+					max-width: 46px;
+					margin-bottom: 10px;
+				}
+				h3{
+					text-align: center;
+				}
 			p {
 				min-height: inherit;
 				font-size: 120%;
