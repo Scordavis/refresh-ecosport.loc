@@ -35,22 +35,21 @@ $(document).ready(function() {
 	  var header = $(this).data('fhead');
 	  var description = $(this).data('fdescript');
 	  var info = $(this).data('finfo');
-	  $('.js-form-button').attr('onsubmit', metrika);
+	  $('.js-form').attr('onsubmit', metrika);
 	  $('.js-form-heading').text(header);
 	  $('.js-form-description').text(description);
 	  $('.js-form [name=form_subject]').val(info);
 	});
 
-
 	$('a[data-src="#form-callback"]').on('click', function() {
 	  var metrika = $(this).data('fmetrika');
 	  var header = $(this).data('fhead');
-	  var info = $(this).data('finfo');
 	  var description = $(this).data('fdescript');
-	  $('.popup-callback').attr('onsubmit', metrika);
+	  var info = $(this).data('finfo');
+	  $('.js-form').attr('onsubmit', metrika);
 	  $('.js-form-heading').text(header);
 	  $('.js-form-description').text(description);
-	  $('.popup-callback [name=form_subject]').val(info);
+	  $('.js-form [name=form_subject]').val(info);
 	});
 
 // form thanks
