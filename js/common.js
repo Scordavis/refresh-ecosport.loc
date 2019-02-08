@@ -65,6 +65,7 @@ $(document).ready(function() {
 			}).done(function() {
 				$('.wide-form__description--policy').addClass('hidden');
 				$('.wide-form__success').removeClass('hidden');
+				$('.wide-form__timeleft').addClass('hidden');
 				$('.modal-form__thanks').addClass('active');
 				setTimeout(function() {
 					// Done Functions
@@ -72,6 +73,7 @@ $(document).ready(function() {
 					$.fancybox.close();
 					$('.wide-form__description--policy').removeClass('hidden');
 					$('.wide-form__success').addClass('hidden');
+					$('.wide-form__timeleft').removeClass('hidden');
 					$('.modal-form__thanks').removeClass('active');
 				}, 5000);
 			});

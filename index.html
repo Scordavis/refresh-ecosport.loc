@@ -169,7 +169,13 @@
 				<div class="form-group col-md-4 col-sm-4">
 					<button type="submit" class="btn btn-form-ecosprot pointer-over">Оставить заявку</button>
 				</div>
-				<p>С Вами свяжется наш юрист в течение <span id="time-left-callback">15</span> минут</p>
+				<div class="col-xs-12 text-center checkbox checkbox--custom">
+					<label>
+						<input type="checkbox" checked required> Да, я согласен получать звонки и согласен на обработку своих персональных данных.
+					</label>
+				</div>
+				<p class="wide-form__success hidden">Благодарим за заявку! Мы скоро свяжемся с Вами.</p>
+				<p class="wide-form__timeleft">С Вами свяжется наш юрист в течение <span id="time-left-callback">15</span> минут</p>
 			</form>
 		</div>
 		<!-- mouse bounce... veeeery slow -->
@@ -787,8 +793,14 @@
 					<div class="form-group col-md-4 col-sm-4 col-xs-12">
 						<button type="submit" class="btn btn-form-ecosprot pointer-over-accord">Оставьте заявку на консультацию</button>
 					</div>
+					<div class="col-xs-12 text-center checkbox checkbox--custom">
+						<label>
+							<input type="checkbox" checked required> Да, я согласен получать звонки и согласен на обработку своих персональных данных.
+						</label>
+					</div>
+					<p class="wide-form__success hidden">Благодарим за заявку! Мы скоро свяжемся с Вами.</p>
+					<p class="wide-form__timeleft">С Вами свяжется наш юрист в течение <span id="time-left-callback">15</span> минут</p>
 				</form>
-				<p class="col-xs-12">С Вами свяжется наш юрист в течение <span id="time-left-callback-footer">14</span> минут для рассчета стоимости</p>
 			</div>
 		</div>
 	</div>
@@ -851,9 +863,9 @@
 				<p class="site-footer__text">Россия, Санкт-Петербург, Учительская ул., д.23, оф.414</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 site-footer__item site-footer__item--center">
-				<p class="site-footer__text">Общество с ограниченной ответственностью<br>«Современные технологии»</p>
+				<!-- <p class="site-footer__text">Общество с ограниченной ответственностью<br>«Современные технологии»</p>
 				<p class="site-footer__text">ОГРН  1177847256696</p>
-				<p class="site-footer__text">ИНН  7804604020<br>КПП  780401001</p>
+				<p class="site-footer__text">ИНН  7804604020<br>КПП  780401001</p> -->
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 site-footer__item site-footer__item--right">
 				<p class="site-footer__text"><a href="policy.html" target="_blank">Политика конфиденциальности</a></p>
@@ -887,8 +899,12 @@
 				<div class="col-lg-12 modal-form__input">
 					<button type="submit" class="btn btn-default form-button modal-form__button js-form-button">Отправить</button>
 				</div>
+				<div class="col-xs-12 text-center checkbox checkbox--custom">
+					<label>
+						<input type="checkbox" checked required> Да, я согласен получать звонки и согласен на обработку своих персональных данных.
+					</label>
+				</div>
 			</form>
-			<p class="modal-form__description">Нажимая на кнопку, вы <a href="policy.html" target="_blank">даете согласие</a> на обработку своих персональных данных</p>
 		</div>
 		<div class="modal-form__thanks">
 			<p class="modal-form__thanks-heading">Благодарим за заявку!</p>
@@ -1110,7 +1126,7 @@
 		</div>
 	</div>
 
-	<!--    short-forms-->
+	<!--    short-forms сейчас не используется-->
 	<div class="modal fade modal-full-form" id="short-form1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">

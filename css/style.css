@@ -1060,6 +1060,10 @@ body input:focus {
   margin: auto;
   color: #ffffff;
 }
+.checkbox--custom {
+  padding-top: 10px;
+  font-size: 75%;
+}
 /*---------------------------our directions---------------------------*/
 .second-screen {
   position: relative;
