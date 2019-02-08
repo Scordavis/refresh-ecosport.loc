@@ -921,14 +921,15 @@ body input:focus {
 .first-screen .header h1 {
   display: block;
   position: relative;
-  text-align: left;
-  color: #062f89;
-  text-shadow: -1px -1px 0px #ffffff;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-weight: 700;
-  padding: 20px;
   margin-bottom: 40px;
+  margin-top: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #062f89;
   font-size: 220%;
+  font-weight: 700;
+  text-align: left;
+  text-shadow: -1px -1px 0px #ffffff;
 }
 .first-screen .header h2 {
   display: block;
@@ -956,6 +957,7 @@ body input:focus {
   bottom: 0px;
 }
 .first-screen .header_row {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .first-screen .header__img {
@@ -963,6 +965,16 @@ body input:focus {
 }
 .first-screen .header p {
   text-align: left;
+}
+.first-screen .header p.header__appeal {
+  color: #bd2020;
+  text-align: center;
+  font-size: 180%;
+  font-weight: 500;
+}
+.first-screen .header p.header__appeal span {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .first-screen .ico-header-block {
   position: relative;
@@ -1051,13 +1063,10 @@ body input:focus {
   position: relative;
   z-index: 2;
 }
-.second-screen .container .row-card {
-  margin-bottom: 40px;
-}
 .second-screen .container .direction-card {
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 12px;
   color: #292929;
   background-color: #e6e6e6;

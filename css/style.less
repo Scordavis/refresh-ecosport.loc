@@ -636,14 +636,15 @@ body {
 			h1 {
 				display: block;
 				position: relative;
-				text-align: left;
-				color: @accent;
-				text-shadow: -1px -1px 0px lighten(@main, 90%);
-				background-color: @whitetr;
-				font-weight: 700;
-				padding: 20px;
 				margin-bottom: 40px;
+				margin-top: 0;
+				padding: 20px;
+				background-color: @whitetr;
+				color: @accent;
 				font-size: 220%;
+				font-weight: 700;
+				text-align: left;
+				text-shadow: -1px -1px 0px lighten(@main, 90%);
 			}
 			h2 {
 				display: block;
@@ -671,6 +672,7 @@ body {
 				}
 			}
 			&_row{
+				margin-top: 20px;
 				margin-bottom: 20px;
 			}
 			&__img{
@@ -678,7 +680,18 @@ body {
 			}
 			p {
 				text-align: left;
+				&.header__appeal{
+					color: @red;
+					text-align: center;
+					font-size: 180%;
+					font-weight: 500;
+					span{
+						text-transform: uppercase;
+						font-weight: 700;
+					}
+				}
 			}
+
 		}
 		.ico-header-block {
 			position: relative;
@@ -772,12 +785,11 @@ body {
 			position: relative;
 			z-index: 2;
 			.row-card {
-				margin-bottom: 40px;
 			}
 			.direction-card {
 				position: relative;
 				display: block;
-				margin: 0 auto;
+				margin: 0 auto 40px;
 				padding: 12px;
 				color: @graf;
 				background-color: darken(@white, 10%);
