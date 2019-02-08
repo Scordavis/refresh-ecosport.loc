@@ -1501,10 +1501,6 @@ body input:focus {
   text-align: center;
   z-index: 2;
 }
-.map .container .adress p:last-child {
-  margin-top: 36px;
-  padding-left: 0;
-}
 .map .container .adress p a {
   color: #ffffff;
   text-decoration: underline;
@@ -4822,11 +4818,10 @@ body input:focus {
   .map .container .adress {
     background-color: #2879ff;
     color: #feecb4;
+    height: auto;
   }
   .map .container .adress h4 {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
   .map .container .adress p {
     position: relative;
