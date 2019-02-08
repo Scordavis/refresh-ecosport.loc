@@ -85,6 +85,16 @@ body {
 		text-shadow: 2px 2px 4px @main;
 		.trans(all 0.3s);
 	}
+	&--card{
+		&:after{
+		bottom: -15px;
+		}
+		&:hover{
+			&:after{
+				bottom: -25px;
+			}
+		}
+	}
 	&:hover {
 		&:after {
 			bottom: -30px;
@@ -915,8 +925,8 @@ body {
 	margin-bottom: 40px;
 	&__heading{
 		text-align: center;
-		font-size: 110%;
-		font-weight: 500;
+		font-size: 140%;
+		font-weight: 700;
 	}
 	&__row{
 		color: black;
@@ -1413,15 +1423,15 @@ body {
 		display: inline-flex;
 		justify-content: space-around;
 		.modal-text-description {
-			p {
-				width: 100%;
-				font-size: 75%;
-				text-align: left;
-				text-indent: 18px;
-				color: lighten(@dark, 30%);
-				font-style: italic;
-				clear: both;
-			}
+			// p {
+			// 	width: 100%;
+			// 	font-size: 75%;
+			// 	text-align: left;
+			// 	text-indent: 18px;
+			// 	color: lighten(@dark, 30%);
+			// 	font-style: italic;
+			// 	clear: both;
+			// }
 			img {
 				margin: 10px 20px 10px 0;
 				border: 1px solid @main;
@@ -2154,6 +2164,17 @@ body {
 		&:hover {
 			&:after {
 				bottom: -30px;
+			}
+		}
+		&--card{
+			&:after{
+				right: unset;
+				bottom: -15px;
+			}
+			&:hover{
+				&:after{
+					bottom: -25px;
+				}
 			}
 		}
 	}

@@ -121,6 +121,12 @@ body input:focus {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+.pointer-over--card:after {
+  bottom: -15px;
+}
+.pointer-over--card:hover:after {
+  bottom: -25px;
+}
 .pointer-over:hover:after {
   bottom: -30px;
 }
@@ -1191,8 +1197,8 @@ body input:focus {
 }
 .feature__heading {
   text-align: center;
-  font-size: 110%;
-  font-weight: 500;
+  font-size: 140%;
+  font-weight: 700;
 }
 .feature__row {
   color: black;
@@ -1672,15 +1678,6 @@ body input:focus {
   display: inline-flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-}
-.modal-our-directions .modal-body .modal-text-description p {
-  width: 100%;
-  font-size: 75%;
-  text-align: left;
-  text-indent: 18px;
-  color: #4d4d4d;
-  font-style: italic;
-  clear: both;
 }
 .modal-our-directions .modal-body .modal-text-description img {
   margin: 10px 20px 10px 0;
@@ -2674,6 +2671,13 @@ body input:focus {
   }
   .pointer-over:hover:after {
     bottom: -30px;
+  }
+  .pointer-over--card:after {
+    right: unset;
+    bottom: -15px;
+  }
+  .pointer-over--card:hover:after {
+    bottom: -25px;
   }
   .pointer-over-small:after {
     position: absolute;
